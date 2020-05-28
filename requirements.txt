@@ -1,4 +1,0 @@
-pandas
-sklearn
-flask
-flask_bootstrap
