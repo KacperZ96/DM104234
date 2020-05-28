@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+ <div class="container">
+   <h1>All Predictions</h1>
+   <hr>
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Correct?</th>
+            <th></th>
+        <tr>
+    </thead>
+    <tbody>
+        {% for name in names %}
+        <tr>
+            <td>{{ name.name }}</td>
+            <td>{{ name.gender_predict }}</td>
+            <td>{{ name.correct }}</td>
+            <td><a href="{{ url_for('view_prediction', id=name.id) }}">Details</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+ </div>
+
+{% endblock %}
