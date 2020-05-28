@@ -1,0 +1,6 @@
+pandas
+sklearn
+flask
+flask_bootstrap
+flask-migrate
+flask_sqlalchemy
